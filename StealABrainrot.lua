@@ -320,6 +320,11 @@ addLabel("— ESP —")
 addToggle("Player ESP", "PlayerESP")
 addToggle("Brainrot ESP", "BrainrotESP")
 
+addLabel("— Auto Finder —")
+addButton("Open Auto Finder", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/njkhjgcd/steal-a-brainrot-script/main/AutoFinder.lua"))()
+end)
+
 local minimized = false
 MinBtn.MouseButton1Click:Connect(function()
     minimized = not minimized
